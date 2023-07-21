@@ -21,6 +21,7 @@ namespace TiendaServicios.Api.Libro.Test
 
         private IEnumerable<LibreriaMaterial> ObtenerDataPrueba()
         {
+            // Este metodo es para generar data de prueba
             A.Configure<LibreriaMaterial>()
                 .Fill(x => x.Titulo).AsArticleTitle()                
                 .Fill(x => x.LibreriaMaterialId, () => { return Guid.NewGuid(); });
